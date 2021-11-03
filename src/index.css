@@ -45,13 +45,20 @@ code {
 
 .movies ul {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   list-style: none;
 }
 
-.movies ul li {
+.movies ul div {
+  margin: 2rem;
+  width: 25vw;
   outline: 1px solid white;
   padding: 1rem
+}
+
+.movies ul div img {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }

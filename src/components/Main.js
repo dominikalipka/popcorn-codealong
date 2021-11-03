@@ -1,22 +1,15 @@
 import React from "react";
+import movies from '../data/movies.json'
+import Movie from "./Movie";
 
 function Main(props) {
   // components/ListDemo.js
 
-  const movies = [
-    { id: "AMLsriUkE", title: "Jurassic Park", director: "Steven Spielberg" },
-    { id: "6dKZxwwmN", title: "Sharknado", director: "Anthony C. Ferrante" },
-    { id: "z2uykusRE", title: "Titanic", director: "James Cameron" },
-  ];
 
   return <div className='movies'>
       <ul>
-          {movies.map((item) => { return (
-            <li key={item.id}>
-              {" "}
-              <h3>{item.title}</h3>
-              <p>Director: {item.director}</p>
-            </li>
+          {movies.map((movie) => { return (
+            <Movie key={movie.id} {...movie}/>
           )})}
       </ul>
   </div>;
