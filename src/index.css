@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family:'Courier New', Courier, monospace;
   color: white;
-  background-color: dimgrey;
+  background-color: rgb(74, 74, 74);
 }
 
 code {
@@ -37,4 +37,21 @@ code {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.movies{
+    margin: 4rem;
+}
+
+.movies ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.movies ul li {
+  outline: 1px solid white;
+  padding: 1rem
 }
